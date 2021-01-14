@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Single Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+       
+        <style>
+
+            p{
+                color: gray;
+            }
+
+
+            .top{
+                background-color: white;
+                color: rgb(17, 149, 201);
+                margin-left: 90px;
+                margin-right: 90px;
+               
+            }
+
+            .button {
+                color: black;
+                display: block;
+                float: right;
+                border: none;
+                
+            }
+
+            .signup{
+                color: white;
+                background-color: rgb(18, 192, 204);
+                border: none;
+                padding: 10px 20px;
+                border-radius: 20px;
+                box-shadow: whitesmoke;
+            }
+
+            .button a  {
+                text-decoration: none;
+                padding: 15px;
+            }
+
+            .middle{
+                background-color: rgb(132, 199, 199);
+                width: 100%;
+                height: auto;
+                color: white;
+                text-align: center;
+                padding: 0px;
+                line-height: 2;
+                width: 100%;
+                position: relative;
+                margin: 0;
+                
+            }
+
+            .middle img{
+                width: 100%;
+                height: 400px;
+            }
+
+            .container {
+                position: relative;
+                text-align: center;
+                color: white;
+            }
+
+            .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -125%);
+            }
+
+            .middle p{
+                color: white;
+            }
+
+            .more{
+                color: rgb(211, 12, 201);
+                background-color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 20px;
+                box-shadow: whitesmoke;
+                margin-top: 5px;
+            }
+
+            .middle2{
+                margin-top: 50px;
+                padding-left: 50px;
+                margin-right: 50px;
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+
+            .middle2 img{
+                float: right;
+                border-radius: 70px 190px 190px 70px;
+            }
+
+            .m2content{
+                float: left;
+                
+            }
+
+            .middle2 h2{
+                color: rgb(226, 26, 183);
+                line-height: 1.5;
+            }
+
+            .middle3{
+                margin-top: 150px;
+            }
+
+            .m3content{
+                text-align: center;
+            }
+
+            .middle3 h2{
+                color: rgb(201, 17, 192);
+            }
+
+            .icons{
+                padding: 50px;
+                height: 300px;
+                
+            }
+
+            .icons:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .column{
+                float: left;
+                width: 33.33%;
+                padding: 30px;
+                height: 150px;
+                text-align: center;
+            }
+
+            .middle4 img{
+                float: left;
+                border-radius: 70px 190px 190px 70px;
+                margin-right: 100px;
+                margin-left: -300px;
+            }
+
+            .middle4{
+                margin: 50px;
+                margin-right: 20px;
+            }
+
+            .middle4 h2{
+                color: rgb(201, 17, 192);
+            }
+
+            .middle5{
+                margin: 100px;
+                text-align: center;
+                padding: 20px;
+                background-color: rgb(213, 217, 219);
+            }
+
+            .middle5 img{
+                padding: 50px;
+            }
+
+            .middle5 h2{
+                color: rgb(201, 17, 192);
+            }
+
+            .reviews{
+                text-align: center;
+                                
+               
+            }
+
+            .column2{
+                display: inline-block;
+                width: 25%;
+                height: 350px;
+                text-align: center;
+                border: 1px solid wheat;
+                border-radius: 40px;
+                padding: 15px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                column-gap: 20%;                
+            }
+
+            .column2 img{
+                overflow: auto;
+                border: 1px;
+                border-radius: 50%;
+            }
+
+            .formtop{
+                background-color: rgb(204, 18, 182);
+                width: 100%;
+                height: 100px;
+                margin-top: 50px;
+            }
+
+            .signuptoday{
+                color:rgb(204, 18, 182);
+                border: none;
+                padding: 10px 20px;
+                border-radius: 20px;
+                box-shadow: whitesmoke;
+                float: right;
+                margin-top: 40px;
+            }
+
+            .form{
+                padding: 50px;
+                float: right;
+                padding-right: 100px;
+                               
+            }
+
+            .forminput{
+                background-color: rgb(77, 75, 75);
+            }
+
+            .formcontent{
+                float: left;
+            }
+
+            .container2 {
+                position: relative;
+                text-align: center;
+                color: white;
+            }
+
+            .centered2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-10%, -150%);
+            }
+
+            .input{
+                border-radius: 20px;
+                border: none;
+                width: 300px;
+                height: 30px;
+            }
+
+            .signupform{
+               position: relative;
+               background-color: rgb(53, 46, 46);
+               padding: 0px;
+               margin: 0px;
+          
+           }
+           .centeredform{
+               position:absolute;
+               top: 50%;
+               left: 45%;
+               transform: translate(-50%, -50%);
+               border: none;
+               padding: 10px 20px;
+           }
+           .signupintro{
+               width: 50%;
+               float: left;
+               padding: 5px 3px;
+               color: white;
+               font-weight: lighter;
+           }
+           
+           .formsection{
+                width: 20%;
+                float: right;
+                color: white;
+                margin-top: 80px;
+           }
+           .formsection input{
+               background-color: rgb(221, 210, 210);
+               border: none;
+               border-radius: 5px;
+               width: 250px;
+               padding: 5px 8px;
+               margin-bottom: 20px;
+           }
+           .formsection b{
+               color: rgb(158, 10, 84);
+           }
+
+                               
+            .footer{
+               padding-top: 50px;
+               width: 100%;
+               height: 100px;
+               padding-left: 50px;
+               
+               
+                
+            }
+
+            .social{
+                padding-top:25px;
+                width: 25%;
+                float: left;
+                padding-right: 20px;
+            }
+
+            .footerm{
+                width: 25%;
+                float: left;
+                padding-left: 70px;
+                text-align: center;
+            }
+
+            .footerl{
+                padding-top:25px;
+                width: 30%;
+                float: right;
+                padding-right: 40px;
+                
+            }
+
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .slideimg {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @media only screen and (max-width: 600px){
+    .col4{
+      display: grid;
+      grid-template-columns: auto;
+      margin: 0%;
+      }
+   }
+
+   @media only screen and (max-width: 600px){
+    .col4 .productitem{
+      text-align: center;
+      }
+   }
+  
+   @media only screen and (max-width: 768px){
+    .gridcontent{
+      display: grid;
+      grid-template-columns: auto;
+      margin: 0%;
+      }
+   }
+            
+                       
+</style>
+
+    </head>
+
+    <body>
+        <div class="top">
+
+            <div class="button">
+                <a href="#features">FEATURES</a>
+                <a href="#reviews">REVIEWS</a>
+                <input class="signup" href="#signup" type="button" value="SIGN UP">
+            </div>
+
+            <div><h1>OSlO</h1></div>
+
+        </div>
+
+        <div class="slideimg">
+        <div class="container fade">
+        <div class="middle">
+            <div class="container1 fade">
+            <img src="https://media.istockphoto.com/photos/man-machine-equilibrium-picture-id1096528728" alt="img" style="width: 100%; opacity: 0.3; margin: 0%;">
+            <div class="container">
+            <div class="centered">
+                <h1>Unleash your potential</h1>
+                <p>I'm a textbox. Double click me to edit the text or to change the way i look. You can change the font-size, size, color, and much more .<br>
+                For advanced styling option, click  on "more" located on the right hand side of the editing menu.</p>
+                <input type="button" class="more" value="Learn More">
+            </div>
+            </div>
+            <div class="text">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+        </div>
+
+       
+        <div class="container fade">
+            <div class="middle">
+                <div class="container1 fade">
+                <img src="https://images.pexels.com/photos/3912981/pexels-photo-3912981.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img" style="width: 100%; opacity: 0.3; margin: 0%;">
+                <div class="container">
+                <div class="centered">
+                    <h1>Unleash your potential</h1>
+                    <p>I'm a textbox. Double click me to edit the text or to change the way i look. You can change the font-size, size, color, and much more .<br>
+                    For advanced styling option, click  on "more" located on the right hand side of the editing menu.</p>
+                    <input type="button" class="more" value="Learn More">
+                </div>
+                </div>
+                <div class="text">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+            </div>
+        
+                
+            <div class="container fade">
+                <div class="middle">
+                    <div class="container1 fade">
+                    <img src="https://www.elsevier.com/__data/assets/image/0011/997553/Laptop-iStock.jpg" alt="img" style="width: 100%; opacity: 0.3; margin: 0%;">
+                    <div class="container">
+                    <div class="centered">
+                        <h1>Unleash your potential</h1>
+                        <p>I'm a textbox. Double click me to edit the text or to change the way i look. You can change the font-size, size, color, and much more .<br>
+                        For advanced styling option, click  on "more" located on the right hand side of the editing menu.</p>
+                        <input type="button" class="more" value="Learn More">
+                    </div>
+                    </div>
+                    <div class="text">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>  
+
+        <script>
+            var slideIndex = 1;
+            showSlides();
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("container1");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000);
+            }
+            </script>
+
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("container1");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); 
+    }
+    </script>
+         
+           
+                
+
+    <div class="middle2">
+            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2n6Rw?ver=4aa9&q=90&m=6&h=720&w=1280&b=%23FFFFFFFF&f=jpg&o=f&aim=true"
+             alt="officescene" width="300px" height="300px">
+
+             <div class="m2contnt">
+                <p><strong>//ABOUT</strong></p>
+                <h2>We all wants our<br>
+                    jobs to run<br>
+                    smoothly</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Voluptas reprehenderit porro natus laboriosam! Sequi earum sint voluptatibus excepturi.<br> 
+                    Natus eos maiores dolorum magni doloremque ullam velit iure odio deserunt harum?</p>
+
+                <input type="button" class="signup" value="Get Started">
+             </div>
+        </div>
+
+        <div class="middle3">
+            <div class="m3content">
+                <p><strong>02//FEATURES</strong></p>
+                <h2>Be on the same page</h2>
+            </div>
+
+        </div>
+
+
+        <div class="icons">
+            <div class="column">
+            <i class="fas fa-align-justify" style="font-size:50px; color: rgb(219, 16, 172);" ></i>    
+            <h2 style="color: gray;">Stay Organized</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit possimus iste tenetur atque illo suscipit ducimus minima enim voluptatem consequuntur!</p>
+            </div>  
+
+            <div class="column">
+            <i class="fas fa-running" style="font-size:50px; color: rgb(219, 16, 172); "></i>   
+            <h2 style="color: gray;">Be more productive</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit possimus iste tenetur atque illo suscipit ducimus minima enim voluptatem consequuntur!</p>
+
+            </div>
+
+            <div class="column"></div>
+            <i class="fas fa-users" style="font-size:50px; color: rgb(219, 16, 172);"></i>     
+            <h2 style="color: gray;">Collaborate</h2>   
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit possimus iste tenetur atque illo suscipit ducimus minima enim voluptatem consequuntur!</p>
+            </div>
+      
+            </div>        
+                                   
+       </div>
+
+       <div class="middle4">
+         <div class="m4content">
+            <img src=https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2n6Rw?ver=4aa9&q=90&m=6&h=720&w=1280&b=%23FFFFFFFF&f=jpg&o=f&aim=true"
+            alt="officescene" width="300px" height="300px">
+
+            <h2>Add Structure to your daily tasks</h2>
+            <h4>To do lists</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Hic officiis dicta voluptatum itaque minus provident.<br>
+                Voluptatem ea quia repudiandae ut doloribus accusamus<br> repellendus excepturi a deserunt nobis veniam porro,<br>
+                laudantium cumque! Blanditiis vel impedit inventore iure assumenda,<br> voluptatem alias incidunt?</p>
+            
+            <h4>Track your meetings</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor?</p>
+         </div>
+    </div>
+
+
+    <div class="middle5">
+        <div class="m5content">
+            <p>03//THE DASHBOARD</p>
+            <h2>Everything works better when it looks better</h2>
+
+            <img src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="macbook" width="600px" height="300px >
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, rerum corrupti.<br>
+                Officia, quibusdam ipsam recusandae quam eveniet sint minima vel?</p>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <h2>Few words from our amazing<br> and trusting customers</h2>
+        <div class="column2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam fugit quam minima ab ea, soluta ducimus dolorum obcaecati. Repellat, architecto.</p>
+
+            <img src="https://i0.wp.com/markteacher.com/wp-content/uploads/2018/03/pexels-photo-683381.jpeg?resize=480%2C320&ssl=1" alt="review1" width="70" height="70">
+            <h4>Mark Johnson</h4>
+            <p>Social Media</p>
+           
+        </div>
+
+        <div class="column2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam fugit quam minima ab ea, soluta ducimus dolorum obcaecati. Repellat, architecto.</p>    
+                
+            <img src="https://i0.wp.com/markteacher.com/wp-content/uploads/2018/03/pexels-photo-683381.jpeg?resize=480%2C320&ssl=1" alt="review1" width="70" height="70">
+            <h4>Mark Johnson</h4>
+            <p>Social Media</p>
+        </div>
+
+        <div class="column2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam fugit quam minima ab ea, soluta ducimus dolorum obcaecati. Repellat, architecto.</p>
+                
+            <img src="https://i0.wp.com/markteacher.com/wp-content/uploads/2018/03/pexels-photo-683381.jpeg?resize=480%2C320&ssl=1" alt="review1" width="70" height="70">
+            <h4>Mark Johnson</h4>
+            <p>Social Media</p>
+        </div>
+    </div>
+
+    
+        <div class="formtop">
+            <input type="button" class="signuptoday" href="#signup" value="SIGN UP TODAY">
+            <h2 style="color: white; padding: 35px;">Did You want to be notified when we launch?</h2>
+        </div>
+
+        <div class="signupform">
+            <img src="https://media.istockphoto.com/photos/man-machine-equilibrium-picture-id1096528728" alt="signup.jpg" style="width: 100%; height: 650px; opacity: 0.3;">
+            <div class="centeredform">
+            <div class="signupintro">
+                <h5>05 // SIGNUP</h5>
+                <h2 style="font-size: 40px; font-weight: lighter;">Get 
+                    Creative with this revolutionary tool</h2>
+                <p style="font-weight: lighter; font-size: 16px;.social{
+                    padding-top:25px;
+                    width: 25%;
+                    float: left;
+                    padding-right: 20px;
+                }
+                <label for="name"  >NAME</label><br>
+                <input type="text"><br>
+                <label for="email">EMAIL ADDRESS<b>*</b></label><br>
+                <input type="email" value="@" ><br>
+                <label for="messege">MESSEGE<b>*</b></label><br>
+                <textarea style="height: 50px; 
+                background-color: rgb(221, 210, 210); border: none;
+                border-radius: 5px; width: 250px;  margin-bottom: 20px;" ></textarea><br>
+                <input type="button" value="Submit" style="background-color:
+                 rgb(158, 10, 84); color: white;" >
+            </div>
+        </div>
+        </div>
+
+        
+
+    <div class="footer">
+        <div class="social">
+           <a href="www.facebook.com"><i class="fab fa-facebook" style="font-size: 40px; color: black;"></i></a> 
+           <a href="www.twitter.com"><i class="fab fa-twitter" style="font-size: 40px; color: black;"></i></a> 
+            <a href="www.intagram.com"><i class="fab fa-instagram" style="font-size: 40px; color: black;"></i></a>
+
+        </div>
+
+               
+        <div class="footerm">
+            <h1>OSlO</h1>
+            <i class="fas fa-heart" style="color: red;"> <span style="color: gray;">lovingly with PageCloud</span> </i>
+
+        </div>
+
+        <div class="footerl">
+            <div class="button">
+                <a href="#features">FEATURES</a>
+                <a href="#reviews">REVIEWS</a>
+                <a href="signup">SIGN UP</a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    </body>
+</html>
